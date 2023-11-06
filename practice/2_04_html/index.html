@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>template</title>
+    <link href="../../_common/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="header-contents">
+            <h1>HTMLを書き換える</h1>
+            <h2>要素を取得する</h2>
+        </div><!-- /.header-contents -->
+    </header>
+    <div class="main-wrapper">
+        <section>
+            <p id="choice">ここに日時を表示します。</p>
+        </section>
+    </div><!-- /.main-wrapper -->
+    <footer>
+        JavaScript Samples
+    </footer>
+    <script>
+        // 取得した要素をのコンテンツ現在の日時に書き換える
+        document.getElementById('choice').textContent = new Date();
+        // document.getElementById('choice').textContent = '通知を受け取りますか？';
+        // 特定のid名を持つ要素を取得してコンソール上に表示
+        console.log(document.getElementById('choice'));
+        // 取得した要素のコンテンツのみを表示
+        console.log(document.getElementById('choice').textContent);
+    </script>
+</body>
+</html>
