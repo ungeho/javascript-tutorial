@@ -1,0 +1,31 @@
+/* sectionタグ内のimageタグ */
+section img {
+    /* 最大の幅を100%に */
+    max-width: 100%;
+}
+
+/* centerクラス */
+.center {
+    /* 中央揃え */
+    margin: 0 auto 0 auto;
+    width: 50%;
+}
+
+ul {
+    /* はみ出た部分を隠す */
+    /* overflow: hidden; */
+    /* 余白0（結果的にこの時点で・の部分も隠れる） */
+    margin: 0;
+    padding: 0;
+    /* ・の部分を無くす */
+    list-style-type: none;
+}
+
+li {
+    /* 左寄せにし、リストが横並びになるようにする */
+    float: left;
+    /* 右側に余白を少しだけつける */
+    margin-right: 1%;
+    /* 幅を小さくする */
+    width: 24%;
+}
