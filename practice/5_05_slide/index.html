@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>template</title>
+    <link href="../../_common/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./slide.css">
+</head>
+<body>
+    <header>
+        <div class="header-contents">
+            <h1>スライドショー</h1>
+            <h2>何枚目の画像か表示する。</h2>
+        </div><!-- /.header-contents -->
+    </header>
+    <div class="main-wrapper">
+        <section>
+            <div class="slide">
+                <div class="image_box">
+                    <img src="images/image1.jpg" id="main_image">
+                </div>
+                <div class="toolbar">
+                    <div class="nav">
+                        <div id="prev"></div>
+                        <!-- ページ番号 -->
+                        <span id="page"></span>
+                        <div id="next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div><!-- /.main-wrapper -->
+    <footer>
+        JavaScript Samples
+    </footer>
+    <script src="./src.js"></script>
+</body>
+</html>

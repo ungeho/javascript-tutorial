@@ -1,0 +1,60 @@
+/* スライド部分 */
+.slide{
+    /* 中央揃え */
+    margin: 0 auto;
+    width: 720px;
+    /* 境界部分を直線の黒に */
+    border: 1px solid black;
+    /* 背景色を黒に */
+    background-color: black;
+}
+
+/* 画像の幅を100%に */
+img {
+    max-width: 100%;
+}
+
+/* 下のツールバー部分 */
+.toolbar {
+    /* はみ出した部分を隠す */
+    overflow: hidden;
+    /* テキストを中央に */
+    text-align: center;
+}
+
+/* ツールバーの中身 【前/次】 */
+.nav {
+    /* インラインブロックに変更 */
+    display: inline-block;
+}
+
+/* idを指定する場合は#をつける */
+#prev {
+    /* 左寄せ（横並びにする） */
+    float: left;
+    width: 40px;
+    height: 40px;
+    /* 背景を指定した画像に */
+    /* 要素の大きさによって画像を繰り返したくない場合（１枚だけにしたい場合） no-repeat */
+    background: url(images/prev.png) no-repeat;
+}
+
+/* idを指定する場合は#をつける */
+#next {
+    /* 左寄せ（横並びにする） */
+    float: left;
+    width: 40px;
+    height: 40px;
+    /* 背景を指定した画像に */
+    /* 要素の大きさによって画像を繰り返したくない場合（１枚だけにしたい場合） no-repeat */
+    background: url(images/next.png) no-repeat;
+}
+
+#page {
+    /* 横並び */
+    /* display: inline-block; */
+    float: left;
+    margin-top: 8px;
+    height: 32px;
+    color: white;
+}
