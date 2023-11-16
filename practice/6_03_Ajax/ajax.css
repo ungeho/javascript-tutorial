@@ -1,0 +1,56 @@
+/* リスト部分 */
+.list {
+    /* オーバーした部分を隠す */
+    overflow: hidden;
+    /* 余白の調整 */
+    margin: 0;
+    padding: 0;
+    /* リストの・を削除 */
+    list-style-type: none;
+}
+
+/* リストの見出し部分 */
+.list h2 {
+    /* 余白を調整 */
+    margin: 0 0 2em 0;
+    /* 文字を小さくし、中央揃え */
+    font-size: 16px;
+    text-align: center;
+}
+
+/* リストの要素 */
+.seminar {
+    /* リスト横並び（左揃え） */
+    float: left;
+    /* 余白を調整 */
+    margin: 10px 10px 10px 0;
+    /* 境界に線を引く */
+    border: 1px solid #23628f;
+    padding: 4px;
+    /* 25%程度の幅に */
+    width: 25%;
+}
+
+.check {
+    margin: 0;
+    padding: 8px;
+    font-size: 12px;
+    /* 文字色を白に */
+    color: #ffffff;
+    /* 背景色を変更 */
+    background-color: #23628f;
+    /* 文字を中央揃え */
+    text-align: center;
+    /* カーソルを合わせたらリンクを踏むような手の形に */
+    cursor: pointer;
+}
+
+/* このクラス名が指定されたら背景色を赤に上書きする。 */
+.red {
+    background-color: #e33a6d;
+}
+
+/* このクラス名が指定されたら背景色を緑に上書きする。 */
+.green {
+    background-color: #7bc52e;
+}
