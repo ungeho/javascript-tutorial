@@ -1,0 +1,33 @@
+/* サブメニューの見出し */
+.submenu h3 {
+    /* 文字の大きさと余白の調整 */
+    margin: 0 0 1em 0;
+    font-size: 16px;
+    /* カーソルを合わせた時に形を変える（リンクをクリック可能な手の形にする） */
+    cursor: pointer;
+    /* 文字色を調整 */
+    color: #5e78c1;
+}
+
+/* サブメニューの見出しにカーソルを合わせた時の処理 */
+.submenu h3:hover {
+    /* 文字の色を変更 */
+    color: #b04188;
+    /* リンクのように下線を表示する */
+    text-decoration: underline;
+}
+
+/* サブメニューのリスト */
+.submenu ul {
+    /* 余白を調整 */
+    margin: 0 0 1em 0;
+    /* リストの点を無くす */
+    list-style-type: none;
+    font-size: 14px;
+}
+
+/* クラス名がhiddenの要素 */
+.hidden {
+    /* 非表示にする */
+    display: none;
+}

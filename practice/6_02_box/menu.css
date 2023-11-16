@@ -1,0 +1,45 @@
+/* id='box' */
+/* ヘッダーより上部に設置されたメニュー */
+#box {
+    /* 位置を調整（中央よりの左揃え） */
+    margin: 0 auto 0 auto;
+    max-width: 960px;
+    /* 非表示 */
+    display: none;
+}
+
+/* リストの余白をなくし、・を消す */
+#box ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* リストの要素に余白をつけ、文字色と境界（下のみ）に色をつける */
+#box li {
+    /* 上下の余白をつける */
+    padding: 8px 0 8px 0;
+    color: #20567d;
+    border-bottom: 1px solid #ffffff;
+}
+
+/* 相対的な位置を指定する為の準備、ヘッダーの位置を基準とする */
+.header-contents {
+    position: relative;
+}
+
+/* ヘッダーの一番上にあるdivタグのid */
+/* 丸みを帯びたボタンのような形に */
+#box_btn {
+    /* ヘッダーの位置を基準に表示位置を指定する。 */
+    position: absolute;
+    /* ヘッダーの右上に移動 */
+    top: 0;
+    right: 0;
+    /* 境界を丸くする */
+    border-radius: 0 0 8px 8px;
+    padding: 6px 20px 6px 20px;
+    background-color: #fff;
+    /* カーソルを合わせたらリンクを踏むときのカーソルに表示を変更する */
+    cursor: pointer;
+}
